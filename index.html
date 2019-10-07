@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+  <div id="application-root"></div>
+
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+    function App() {
+      return (
+      // <header>  
+      //   <h1>Sally Students resume</h1>
+      // </header>
+      <main> 
+      <h1>Sally Student</h1> 
+      <div className="school"><section> 
+        <h2>Education Background</h2> 
+          <h3>Harvard University 1999</h3> 
+          <p>10.0 GPA</p>
+      </section></div> 
+      <div className="job"><section> 
+        <h2>Employment History</h2> 
+        <h3>Google</h3> 
+        <ul>
+        <li>Job Title: Full-Stack Developer</li>
+        <li>Dates of employment: 2000-2010</li>
+        <li>Duties: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul> 
+        <h3>Microsoft</h3> 
+        <ul>
+        <li>Job Title: Software Engineer</li>
+        <li>Dates of employment: 2010-2015</li>
+        <li>Duties: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul>
+      </section></div>
+      <section> 
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="sexy mama" />
+        <div className="contact"> 
+          <h2>Contact Information</h2><br />
+          <address>Sally Student</address><br /> 
+          <address><a href="mailto:sallystudent@gmail.com">Email me here!</a></address><br />
+          <address><a href="tel:3315559999">Call me ;) 1-331-555-9999</a></address><br /> 
+          </div>
+      </section> 
+    </main>
+      );
+    };
+    const appRoot = document.querySelector('#application-root');
+
+    ReactDOM.render(<App />, appRoot);
+  </script>
+</body>
+</html>
